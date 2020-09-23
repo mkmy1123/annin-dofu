@@ -168,6 +168,12 @@ menubar
   margin: 100px 0;
 }
 
+.top-info {
+  display: flex;
+}
+
+
+
 /*
 ////////////////////////////////////////
 popup modal
@@ -229,7 +235,18 @@ popup modal
   cursor: pointer;
 }
 
-#js-show-popup {
+.js-show-popup {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.button_to_top {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  font-size: 40px;
+}
+
+.button_to_top i {
+  color: orange;
 }
