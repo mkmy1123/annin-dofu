@@ -79,10 +79,14 @@ img {
 */
 
 body {
-  padding: 32px 0;
-  background: rgb(28, 9, 1);
+  padding: 22px 0;
   height: 2000px;
   color: #fff;
+  background-image: -moz-linear-gradient(135deg, #1c0901 0%,#1c0901 45%,#2b1813 45%,#2b1813 50%,#1c0901 50%,#1c0901 95%,#2b1813 95%);
+  background-image: -webkit-linear-gradient(135deg, #1c0901 0%,#1c0901 45%,#2b1813 45%,#2b1813 50%,#1c0901 50%,#1c0901 95%,#2b1813 95%);
+  background-image: linear-gradient(135deg, #1c0901 0%,#1c0901 45%,#2b1813 45%,#2b1813 50%,#1c0901 50%,#1c0901 95%,#2b1813 95%);
+  background-position: 0px 0px;
+  background-size: 10px 10px;
 }
 
 a {
@@ -104,15 +108,11 @@ menubar
 ////////////////////////////////////////
 */
 
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100px;
-}
-
 .global-nav {
-  line-height: 100px;
+  position: fixed;
+  background: rgb(28, 9, 1);
+  top: 22px;
+  width: 100%;
 }
 
 .global-nav__items {
@@ -139,6 +139,11 @@ menubar
   font-weight: bold;
 }
 
+.global-nav__logo > img {
+  height: 35px;
+  vertical-align: middle;
+}
+
 .global-nav__link {
   display: block;
   text-align: center;
@@ -148,6 +153,7 @@ menubar
 
 .global-nav__ticket {
   display: block;
+  margin: 0 30px;
   text-align: center;
   background: orange;
   line-height: 64px;
@@ -158,6 +164,72 @@ menubar
   border-bottom: 2px solid orange;
 }
 
-.main {
-  margin-top: 100px;
+.eye-catch {
+  margin: 100px 0;
+}
+
+/*
+////////////////////////////////////////
+popup modal
+////////////////////////////////////////
+*/
+
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+  color: #1c0901;
+}
+.popup.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 50px;
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner img {
+  width: 100%;
+}
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+
+#js-show-popup {
+  cursor: pointer;
+  text-decoration: underline;
 }
