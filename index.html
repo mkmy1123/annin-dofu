@@ -7,14 +7,15 @@
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <link rel='stylesheet' href='style.css'>
 </head>
+
 <body>
   <header class="header">
     <nav class="global-nav" id="navigation">
       <ul class="global-nav__items">
         <li class="global-nav__item__logo"><a href="#" class="global-nav__logo"><img src='logo.png' alt='logo'></a></li>
         <li class="global-nav__item"><a href="#story" class="global-nav__link">あらすじ</a></li>
-        <li class="global-nav__item"><a href="#" class="global-nav__link">キャスト</a></li>
-        <li class="global-nav__item"><a href="#" class="global-nav__link">スタッフ</a></li>
+        <li class="global-nav__item"><a href="#cast" class="global-nav__link">キャスト</a></li>
+        <li class="global-nav__item"><a href="#staff" class="global-nav__link">スタッフ</a></li>
         <li class="global-nav__item"><a href="#" class="global-nav__link">ムービー</a></li>
         <li class="global-nav__item"><a href="#" class="global-nav__link">スケジュール</a></li>
         <li class="global-nav__item"><a href="#" class="global-nav__link">アクセス</a></li>
@@ -26,26 +27,63 @@
       <img src='header.png' alt='header'>
     </div>
   </header>
-  <div class="container" id="top">
-    <div class='top-info'>
-      <div class='top-info__date'>
-        <h1>2021年 2月10日( 水 ) ~14日( 日 )</h1>
-        <h1>入場料(全席指定)4,800 円(税込) 学生料金 3,500 円 オンライン観劇 2,500 円</h1>
-        <h1>一般前売開始 10 月 17 日 ( 土 ) 12:00 ~</h1>
+
+  <main class="main">
+    <div id="top" class="container">
+      <div class='top-info'>
+        <div class='top-info__date'>
+          <h1>2021年 2月10日( 水 ) ~14日( 日 )</h1>
+          <h1>入場料(全席指定)4,800 円(税込) 学生料金 3,500 円 オンライン観劇 2,500 円</h1>
+          <h1>一般前売開始 10 月 17 日 ( 土 ) 12:00 ~</h1>
+        </div>
+        <div class='top-info__tweet'>
+          <a class="twitter-timeline" data-lang="ja" data-width="500" data-height="300" data-theme="light"
+            href="https://twitter.com/nu_ta_info?ref_src=twsrc%5Etfw">Tweets by nu_ta_info</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <p>最新の公演情報はTwitterをご覧ください</p>
+        </div>
       </div>
-      <div class='top-info__tweet'>
-        <a class="twitter-timeline" data-lang="ja" data-width="500" data-height="300" data-theme="light"
-          href="https://twitter.com/nu_ta_info?ref_src=twsrc%5Etfw">Tweets by nu_ta_info</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <p>最新の公演情報はTwitterをご覧ください</p>
+      <div class='top-notice'>
+        <h1 class="top-notice__title">♪オンライン観劇のお知らせ♪</h1>
+        <p class="top-notice__paragraph">新型コロナウイルス等の感染予防・拡散防止対策の一環として 今公演は、オンラインで観劇することができます。お申込みは通常のチケットフォームよりご予約いただけます。その際、必ずメールアドレスを記載くださいますようお願い申し上げます。 当日、ご予約いただいた回の URL を送付させていただきます。</p>
       </div>
+      <div class='top-headline'>
+        <h1 class="top-headline__title">演劇ユニットnu-ta 第4回公演『杏仁豆腐のココロ』</h1>
+        <p class="top-headline__paragraph">
+          鄭義信が描いた、可笑しくも愛おしい会話で紡がれる傑作に <br>
+          実力派女優・松村沙瑛子と無名塾のホープ・大塚航二朗を迎え、駿才・田中圭介が挑む。
+        </p>
+        <p class="top-headline__paragraph">演劇ユニットnu-ta待望の新作が下北沢に降り立つ!</p>
+      </div>
+      <section>
+        <div id='story' class="story">
+          <h1 class="story__title">あらすじ</h1>
+          <p class='story__paragraph'>
+            ある年のクリスマス、小夜子と達郎は段ボールの山の中で過ごしていた。<br>
+            代々やってきたチンドン屋をやっている小夜子と、仕事を辞めて専業主夫の達郎。<br>
+            7年間共に過ごした二人も別れの時を迎えようとしていた。<br>
+          </p>
+          <p class='story__paragraph'>
+            いつもの会話といつものやり取り、でも何かがすれ違っている。<br>
+            ふざけあったやり取りの中で、だんだんと心の底に溜まっていた想いがあふれ出す......
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div id="cast" class='cast'>
+
+        </div>
+      </section>
+
+      <section>
+        <div id="staff" class='staff'>
+          <a id="js-show-popup-1" class="js-show-popup">Show Popup</a>
+          <a id="js-show-popup-2" class="js-show-popup">Show Popup</a>
+        </div>
+      </section>
     </div>
-    <div id='story'>
-      <h1>あらすじ</h1>
-      <a id="js-show-popup-1" class="js-show-popup">Show Popup</a>
-      <a id="js-show-popup-2" class="js-show-popup">Show Popup</a>
-    </div>
-  </div>
+  </main>
 
 
   <div class="button_to_top"><a href='#'><i class="fas fa-caret-square-up"></i></a></div>

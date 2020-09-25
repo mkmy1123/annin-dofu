@@ -80,7 +80,7 @@ img {
 
 body {
   padding: 22px 0;
-  height: 2000px;
+  height: 3000px;
   color: #fff;
   background-image: -moz-linear-gradient(135deg, #1c0901 0%,#1c0901 45%,#2b1813 45%,#2b1813 50%,#1c0901 50%,#1c0901 95%,#2b1813 95%);
   background-image: -webkit-linear-gradient(135deg, #1c0901 0%,#1c0901 45%,#2b1813 45%,#2b1813 50%,#1c0901 50%,#1c0901 95%,#2b1813 95%);
@@ -100,6 +100,7 @@ a {
   margin-right: auto;
   /* floatを使った場合の対策 */
   overflow: hidden; 
+  text-align: center;
 }
 
 /*
@@ -160,6 +161,10 @@ menubar
   font-weight: bold;
 }
 
+.global-nav__ticket:hover {
+  background: gold;
+}
+
 .global-nav__link:hover {
   border-bottom: 2px solid orange;
 }
@@ -168,8 +173,80 @@ menubar
   margin: 100px 0;
 }
 
+/*
+////////////////////////////////////////
+top contents
+////////////////////////////////////////
+*/
+
 .top-info {
   display: flex;
+}
+
+.top-notice {
+  background: rgba(255,255,255,.2);
+  width: 70%;
+  padding: 10%;
+  margin: 100px auto;
+  border: dashed #fff 5px;
+}
+
+.top-notice__title {
+  font-size: 30px;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.top-notice__paragraph {
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+.top-headline {
+  padding: 20px;
+  margin: 100px;
+}
+
+.top-headline__title {
+  font-size: 30px;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.top-headline__paragraph {
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+/*
+////////////////////////////////////////
+contents
+////////////////////////////////////////
+*/
+
+.story {
+  padding: 100px;
+}
+
+.story__title {
+  font-size: 30px;
+  margin-bottom: 1em;
+  font-weight: bold;
+  padding-top: 50px;
+  border-top: solid orange 2px;
+}
+
+.story > .story__paragraph {
+  margin-bottom: 30px;
+}
+
+.story:last-child {
+  border-bottom: solid orange 2px;
+}
+
+.story__paragraph {
+  font-size: 15px;
+  line-height: 1.5em;
 }
 
 
