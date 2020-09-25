@@ -171,6 +171,15 @@ menubar
 
 .eye-catch {
   margin: 100px 0;
+  background-image: url('img/main_yoko.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.eye-catch__logo {
+  width: 50%;
 }
 
 /*
