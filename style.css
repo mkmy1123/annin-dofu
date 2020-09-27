@@ -321,7 +321,7 @@ popup modal
   cursor: pointer;
 }
 
-.js-show-popup {
+.show-popup {
   cursor: pointer;
   text-decoration: underline;
 }
