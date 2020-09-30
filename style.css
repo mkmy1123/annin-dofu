@@ -101,6 +101,7 @@ a {
   /* floatを使った場合の対策 */
   overflow: hidden; 
   text-align: center;
+  height: 5000000px;
 }
 
 /*
@@ -170,7 +171,7 @@ menubar
 }
 
 .eye-catch {
-  margin: 100px 0;
+  margin: 100px 0 0 0;
   background-image: url('img/main_yoko.jpg');
   background-position: center;
   background-size: cover;
@@ -190,6 +191,27 @@ top contents
 
 .top-info {
   display: flex;
+  background-color: brown;
+  border-radius: 100px;
+  margin: 5% 0;
+}
+
+.top-info__date {
+  width: 450px;
+  align-self: center;
+}
+
+.top-info__tweet {
+  padding: 15px;
+}
+
+.top-info__tweet__paragraph > i {
+  color: #333;
+}
+
+.top-info__tweet__paragraph {
+  color: #fff;
+  padding: 5px;
 }
 
 .top-notice {
@@ -234,23 +256,19 @@ contents
 */
 
 .story {
-  padding: 100px;
+  border-top: solid orange 2px;
+  padding-bottom: 100px;
 }
 
 .story__title {
   font-size: 30px;
+  margin-top: 130px;
   margin-bottom: 1em;
   font-weight: bold;
-  padding-top: 50px;
-  border-top: solid orange 2px;
 }
 
-.story > .story__paragraph {
+#story > .story__paragraph {
   margin-bottom: 30px;
-}
-
-.story:last-child {
-  border-bottom: solid orange 2px;
 }
 
 .story__paragraph {
@@ -258,7 +276,50 @@ contents
   line-height: 1.5em;
 }
 
+.cast {
+  border-top: solid orange 2px;
+}
 
+.cast__title {
+  font-size: 30px;
+  margin-top: 130px;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.cast__items {
+  display: flex;
+}
+
+.cast__items__item {
+  margin: 5%;
+  width: 50%;
+}
+
+.cast__items__item > img {
+  margin-bottom: 15px;
+}
+
+.cast__items__name {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.cast__items__actor-name {
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.staff {
+  border-top: solid orange 2px;
+}
+
+.staff__title {
+  font-size: 30px;
+  margin-top: 130px;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
 
 /*
 ////////////////////////////////////////
