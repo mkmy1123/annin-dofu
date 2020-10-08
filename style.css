@@ -79,15 +79,14 @@ img {
 */
 
 body {
-  padding: 22px 0;
-  height: 3000px;
+  font-family: Arial, Helvetica, sans-serif;
   color: #fff;
+  padding: 22px 0;
   background-image: -moz-linear-gradient(135deg, #1c0901 0%,#1c0901 45%,#2b1813 45%,#2b1813 50%,#1c0901 50%,#1c0901 95%,#2b1813 95%);
   background-image: -webkit-linear-gradient(135deg, #1c0901 0%,#1c0901 45%,#2b1813 45%,#2b1813 50%,#1c0901 50%,#1c0901 95%,#2b1813 95%);
   background-image: linear-gradient(135deg, #1c0901 0%,#1c0901 45%,#2b1813 45%,#2b1813 50%,#1c0901 50%,#1c0901 95%,#2b1813 95%);
   background-position: 0px 0px;
   background-size: 10px 10px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -181,6 +180,23 @@ menubar
 
 .eye-catch__logo {
   width: 50%;
+}
+
+@media screen and (max-width: 959px) {
+  /* 959px以下に適用されるCSS（タブレット用） */
+}
+
+@media screen and (max-width: 480px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+  .header,
+  .head-container,
+  .footer {
+    width: 1000px;
+  }
+
+  #top {
+    width: 1000px;
+  }
 }
 
 /*
