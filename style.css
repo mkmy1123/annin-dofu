@@ -210,6 +210,7 @@ menubar
 
   .eye-catch{
     margin-top: 0;
+    height: 800px;
   }
 
   #responsive__hm-icon {
@@ -481,6 +482,10 @@ contents
   font-size: 18px;
   line-height: 2em;
   margin-bottom: 1.5em;
+}
+
+.responsive__sns {
+  display: none;
 }
 
 .cast__sns {
@@ -777,15 +782,11 @@ popup modal
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  width: 80%;
-  max-width: 600px;
+  width: 90%;
+  max-width: 800px;
   padding: 50px;
   background-color: #fff;
   z-index: 2;
-}
-
-.popup-inner img {
-  width: 100%;
 }
 
 .close-btn {
@@ -904,15 +905,98 @@ components
     width: 800px;
   }
 
+  .top-headline__paragraph {
+    font-size: 40px;
+  }
+
   .story__paragraph {
     width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
+    font-size: 40px;
     line-height: 2em;
+  }
+
+  .cast__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cast__items__item {
+    width: 700px;
+  }
+
+  .cast__items__actor-name {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .responsive__sns {
+    display: block;
+    font-size: 30px;
+  }
+
+  .twitter_btn {
+    padding: 0.4em;
+  }
+
+  .cast__sns {
+    display: none;
+  }
+
+  .staff__dfn-word {
+    font-size: 20px;
+    line-height: 2em;
+    display: inline-block;
+    text-align: right;
+    width: 400px;
+  }
+
+  .staff__staff-name {
+    font-size: 28px;
+    line-height: 2em;
+    display: inline-block;
+    text-align: left;
+    width: 400px;
+    margin-left: 5px;
+  }
+
+  .movie__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie__items__item {
+    width: 800px;
+  }
+
+  .schedule__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .schedule__items__item {
+    width: 800px;
+  }
+
+  .schedule__items__wrap-item {
+    width: 800px;
+  }
+
+  .schedule__items__paragraph {
+    font-size: 30px;
+  }
+
+  .schedule__link {
+    font-size: 30px;
   }
 
   .notion__paragraph {
     width: 800px;
     margin: 0 auto;
+    text-align: left;
   }
 
   .notion__subtitle {
@@ -947,4 +1031,15 @@ components
   .button_to_top {
     font-size: 100px;
   }
+
+  .footer__paragraph {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+
+  .footer__social-bar {
+    font-size: 35px;
+  }
+
 }
