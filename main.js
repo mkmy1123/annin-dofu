@@ -16,21 +16,19 @@ closeModalTriggers.forEach(trigger => {
 })
 
 $(function () {
-  $(".btn-gnavi").on("click", function () {
-    // ハンバーガーメニューの位置を設定
-    var rightVal = 0;
-    if ($(this).hasClass("open")) {
-      // 位置を移動させメニューを開いた状態にする
-      rightVal = -300;
-      // メニューを開いたら次回クリック時は閉じた状態になるよう設定
-      $(this).removeClass("open");
-    } else {
-      // メニューを開いたら次回クリック時は閉じた状態になるよう設定
-      $(this).addClass("open");
-    }
+  $('#responsive__hm-icon').on('click', function () {
+    $('.responsive__menu-trigger').toggleClass('active');
+    $('.responsive__nav').toggleClass('open');
+    $('.responsive__nav__menu').toggleClass('open');
+    $('.responsive__overlay').toggleClass('open');
+  });
+});
 
-    $("#global-navi").stop().animate({
-      right: rightVal
-    }, 200);
+$(function () {
+  $('#responsive__nav li a').on('click', function () {
+    $('.responsive__menu-trigger').toggleClass('active');
+    $('.responsive__nav').toggleClass('open');
+    $('.responsive__nav__menu').toggleClass('open');
+    $('.responsive__overlay').toggleClass('open');
   });
 });

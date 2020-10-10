@@ -2,17 +2,55 @@
 <html lang='ja'>
 <head>
   <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta name="viewport" content="width=980">
   <title>杏仁豆腐のココロ</title>
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <link rel='stylesheet' href='style.css'>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header class="header">
+    <div id='responsive__nav' class='responsive__nav'>
+      <div class='responsive__overlay'>
+        <div id='responsive__hm-icon'>
+          <a class='responsive__menu-trigger'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="responsive__nav__menu">
+          <li class="responsive__nav__item">
+            <a href="#story" class="global-nav__link">あらすじ</a>
+          </li>
+          <li class="responsive__nav__item">
+            <a href="#cast" class="global-nav__link">キャスト</a>
+          </li>
+          <li class="responsive__nav__item">
+            <a href="#staff" class="global-nav__link">スタッフ</a>
+          </li>
+          <li class="responsive__nav__item">
+            <a href="#movie" class="global-nav__link">ムービー</a>
+          </li>
+          <li class="responsive__nav__item">
+            <a href="#schedule" class="global-nav__link">スケジュール</a>
+          </li>
+          <li class="responsive__nav__item">
+            <a href="#access" class="global-nav__link">アクセス</a>
+          </li>
+          <li class="responsive__nav__item">
+            <a href="#notion" class="global-nav__link">注意事項</a>
+          </li>
+          <li class="responsive__nav__item">
+            <a href="https://www.quartet-online.net/ticket/anninheart" class="global-nav__ticket">ご予約はこちら</a>
+          </li>
+        </div>
+      </div>
+    </div>
     <nav class="global-nav" id="navigation">
       <ul class="global-nav__items">
-        <li class="global-nav__item__logo"><a href="#" class="global-nav__logo"><img src='img/logo.png' alt='logo'></a></li>
+        <li class="global-nav__item__logo"><a href="#" class="global-nav__logo"><img src='img/header_logo.png' alt='logo'></a></li>
         <li class="global-nav__item"><a href="#story" class="global-nav__link">あらすじ</a></li>
         <li class="global-nav__item"><a href="#cast" class="global-nav__link">キャスト</a></li>
         <li class="global-nav__item"><a href="#staff" class="global-nav__link">スタッフ</a></li>
@@ -25,7 +63,7 @@
     </nav>
     <div class="eye-catch">
       <div class='eye-catch__logo'>
-        <img src='img/logo.png' alt='logo'>
+        <img src='img/main_logo.png' alt='logo'>
       </div>
     </div>
   </header>
@@ -49,7 +87,7 @@
       </div>
       <div class='top-info__tweet'>
         <p class='top-info__tweet__paragraph'><i>\</i> 最新情報 <i class="fas fa-bullhorn"></i> Twitterより発信中 <i>/</i></p>
-        <a class="twitter-timeline" data-lang="ja" data-width="450" data-height="300" data-theme="light"
+        <a class="twitter-timeline" data-lang="ja" data-width="device-width" data-height="450" data-theme="light"
           href="https://twitter.com/nu_ta_info?ref_src=twsrc%5Etfw">Tweet</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
@@ -88,15 +126,15 @@
           <h1 class="cast__title">◆ キャスト ◆</h1>
           <div class='cast__items'>
             <div class='cast__items__item'>
-              <img src='img/matsumura.png' alt=''>
+              <img src='img/matsumura.jpg' alt=''>
               <h3 class="cast__items__name">- 小夜子 -</h3>
               <h2 class="cast__items__actor-name">松村沙瑛子</h2>
               <p class="cast__items__paragraph">
-                nu-ta主宰。桐朋学園芸術短期大学演劇専攻ミュージカルコースを経て、平成20年劇団新派に入団、波乃久里子に師事。アトリエ公演『女の一生』主演・布引けい役、『大つごもり』主演・みね役ほか6年間で1500ステージ余りの舞台に出演し、26年3月に退団。現在、美養品会社あきゅらいずにてスキンケアモデルを務める。近年の出演舞台に『蘭RAN～緒方洪庵 浪華の事件帳～』おあき役、『浪漫活劇るろうに剣心』雪代巴役など。
+                nu-ta主宰。桐朋学園芸術短期大学演劇専攻ミュージカルコースを経て、平成20年劇団新派に入団、波乃久里子に師事。アトリエ公演『女の一生』主演・布引けい役、『大つごもり』主演・みね役ほか、6年間で1500ステージ余りの舞台に出演し、26年退団。現在、美養品会社あきゅらいずにてスキンケアモデルを務める。近年の出演舞台に『蘭RAN～緒方洪庵 浪華の事件帳～』おあき役、『浪漫活劇るろうに剣心』雪代巴役など。
               </p>
             </div>
             <div class='cast__items__item'>
-              <img src='img/otsuka.png' alt=''>
+              <img src='img/otsuka.jpg' alt=''>
               <h3 class="cast__items__name">- 達郎 -</h3>
               <h2 class="cast__items__actor-name">大塚航二朗</h2>
               <p class="cast__items__paragraph">
@@ -291,7 +329,7 @@
           <div class='notion-download'>
             <p class="notion__paragraph">
               公演チラシ PDF
-              <a class="notion__download__link" href="img/chirashi_ura.pdf" download="chirashi_ura.pdf">ダウンロード</a>
+              <a class="notion__download__link" href="img/chirasi.pdf" download="chirasi.pdf">ダウンロード</a>
             </p>
             <!-- 
               リーフレット ダウンロードリンク
