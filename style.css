@@ -921,6 +921,42 @@ components
 
 @media screen and (max-width: 980px) {
 
+  .covid-19 {
+    width: 800px;
+    border: red solid 2px;
+    padding: 2em 1em;
+    margin: 2em auto;
+    text-align: left;
+  }
+
+  .covid-19__title {
+    font-size: 22px;
+    margin-bottom: 1em;
+    font-weight: bold;
+    color: red;
+    line-height: 3em;
+  }
+
+  .covid-19__description {
+    font-size: 15px;
+    line-height: 3em;
+    margin-bottom: 1em;
+  }
+
+  .covid-19__time-schedules {
+    margin: 1.5em 0;
+    line-height: 3em;
+  }
+
+  .covid-19__alert {
+    color: red;
+  }
+
+  .covid-19__link {
+    color: darkcyan;
+    cursor: pointer;
+  }
+
   .top-info {
     display: flex;
     flex-direction: column;
